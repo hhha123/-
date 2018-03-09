@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/vue.js"></script>
+	</head>
+	<body>
+		<div id="header_wrap">
+			<div id="header">
+				<div class="top">
+					<ul class="top_left left">
+						<li class="firstLi_left">
+							<img src="imgs/shouye/youli.gif" />
+							<a href="html/register.html">注册有礼</a>
+						</li>
+						<li><span>|</span></li>
+						<li>
+							<a href="html/login.html">登录</a>
+						</li>
+						<li><span>|</span></li>
+						<li>
+							<a href="#">收藏</a>
+						</li>
+					</ul>
+					<ul class="top_right right">
+						<li>
+							<a href="#" title="在线咨询">在线咨询</a>
+						</li>
+						<li>|</li>
+						<li>
+							<div id="mobilePop"></div>
+							<a href="#" onmouseover="$('#mobilePop').show();" onmouseout="$('#mobilePop').hide();">手机版</a>
+						</li>
+						<li>|</li>
+						<li class="weibo">
+							<a href="#">新浪微博</a>
+						</li>
+					</ul>
+				</div>
+				<div class="banner">
+					<a href="index.html" class="logo left" title="魅力惠MEI.COM 时尚奢品 限时折扣">魅力惠</a>
+					<a class="logo_slogan left" style="cursor: default;">时尚奢品&nbsp; 限时折扣</a>
+				</div>
+				<div class="nav">
+					<div class="menu left">
+						<ul>
+							<li class="menuLi">
+								<a href="index.html">首页</a>
+							</li>
+							<li>
+								<a href="index.html">女士</a>
+							</li>
+							<li>
+								<a href="index.html">男士</a>
+							</li>
+							<li>
+								<a href="index.html">美妆</a>
+							</li>
+							<li>
+								<a href="index.html">家居</a>
+							</li>
+							<li>
+								<a href="index.html">婴童</a>
+							</li>
+							<li>
+								<div class="haiwai"></div>
+								<a href="index.html">海外</a>
+							</li>
+							<li>
+								<a href="index.html">即将推出</a>
+							</li>
+						</ul>
+					</div>
+					<div class="shop right">
+						<ul>
+							<li class="shopping">0</li>
+							<li>|</li>
+							<li>￥0.00</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="banpic">
+			<div class="ban"></div>
+		</div>
+		<div id="content">
+			<div class="shoplist" id="shoplist">
+				<div class="eventlist" >
+                     <h3>
+                     	<span class="spanLeft span"></span>
+                     	<span class="titleshop">今日上新</span>
+                     	<span class="spanRight span"></span>
+                     </h3>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">7天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_1.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="new-label left">海外直发</span>
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">BALLY&nbsp;瑞士经典 魅力十足</span>
+                     		<p><span>3.5</span>折起</p>
+                     	</div>
+                     </a>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">6天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_2.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="new-label left">海外直发</span>
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">OZWEAR UGG 温暖一路相随</span>
+                     		<p class="right"><span>5</span>折起</p>
+                     	</div>
+                     </a>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">购任意产品，享9折；满2件及以上，享7.5折优惠</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_3.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">TSE 简约奢华 羊绒女装 </span>
+                     		<p class="right"><span>1.7</span>折起</p>
+                     	</div>
+                     </a>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">6天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_4.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">PHILIPP PLEIN  男女服装包袋配件 </span>
+                     		<p class="right"><span>2</span>折起</p>
+                     	</div>
+                     </a>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">2天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_5.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">过年不打烊 WDLS 羊绒男装（跨场满减1500-300）</span>
+                     		<p class="right"><span>1</span>折起</p>
+                     	</div>
+                     </a>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">2天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_6.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">过年不打烊 WDLS 羊绒男装（跨场满减1500-300） </span>
+                     		<p class="right"><span>0.7</span>折起</p>
+                     	</div>
+                     </a>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">6天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_7.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">PHILIPP PLEIN  男女服装包袋配件 </span>
+                     		<p class="right"><span>1.2</span>折起</p>
+                     	</div>
+                     </a>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">6天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_8.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">PHILIPP PLEIN  男女服装包袋配件 </span>
+                     		<p class="right"><span>1.7</span>折起</p>
+                     	</div>
+                     </a>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">6天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_9.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">PHILIPP PLEIN  男女服装包袋配件 </span>
+                     		<p class="right"><span>1.9</span>折起</p>
+                     	</div>
+                     </a>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">6天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_10.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="new-label left">海外直发</span>
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">PHILIPP PLEIN  男女服装包袋配件 </span>
+                     		<p class="right"><span>1.7</span>折起</p>
+                     	</div>
+                     </a>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">5天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_11.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="new-label left">海外直发</span>
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">BURBERRY 英式魅力  优雅出行 </span>
+                     		<p class="right"><span>1.0</span>折起</p>
+                     	</div>
+                     </a>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">3天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_12.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">美妆女王节 直降专场 </span>
+                     		<p class="right"><span>2.3</span>折起</p>
+                     	</div>
+                     </a>
+				</div>
+			    <div class="eventlist">
+			    	<h3>
+                     	<span class="spanLeft span"></span>
+                     	<span class="titleshop">热卖品牌</span>
+                     	<span class="spanRight span"></span>
+                     </h3>
+                     <a href="html/page1.html" v-for="item in proList" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">{{item.activeEnd}}</div>
+                     	<div class="picshop">
+                     		<img :src="item.img" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">{{item.name}}</span>
+                     		<p><span>{{item.discount}}</span>折起</p>
+                     	</div>
+                     </a>
+			    </div>
+			    <div class="eventlist">
+			    	<h3>
+                     	<span class="spanLeft span"></span>
+                     	<span class="titleshop"><a href="#" class="human-active">女士活动</a></span>
+                     	<span class="spanRight span"></span>
+                     </h3>
+                     <div class="women-ban">
+                     	<div class="home-silo">
+                     		<h4>女士</h4>
+                     		<div class="home-box">
+                     			<div class="home-box-women">
+	                     			<a href="">服饰</a>
+	                     			<a href="">鞋履</a>
+	                     			<a href="">包袋</a>
+	                     			<a href="">手表&首饰</a>
+	                     			<a href="">配饰</a>
+	                     			<a href="">内衣</a>
+	                     			<a href="">眼镜</a>
+                     			</div>
+                     			<a href="" class="other-more">查看更多   >></a>
+                     		</div>
+                     	</div>
+                     </div>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">7天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_3.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="new-label left">海外直发</span>
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">BALLY&nbsp;瑞士经典 魅力十足</span>
+                     		<p><span>2</span>折起</p>
+                     	</div>
+                     </a>
+                      <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">2天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_13.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">过年不打烊 WDLS 羊绒男装（跨场满减1500-300）</span>
+                     		<p class="right"><span>2.8</span>折起</p>
+                     	</div>
+                     </a>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">7天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_10.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="new-label left">海外直发</span>
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">BALLY&nbsp;瑞士经典 魅力十足</span>
+                     		<p><span>4.8</span>折起</p>
+                     	</div>
+                     </a>
+                      <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">2天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_2.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">过年不打烊 WDLS 羊绒男装（跨场满减1500-300）</span>
+                     		<p class="right"><span>5</span>折起</p>
+                     	</div>
+                     </a>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">3天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_19.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">过年不打烊 WDLS 羊绒男装（跨场满减1500-300）</span>
+                     		<p class="right"><span>1</span>折起</p>
+                     	</div>
+                     </a>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">5天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_16.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="new-label left">海外直发</span>
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">BURBERRY 英式魅力  优雅出行 </span>
+                     		<p class="right"><span>1.0</span>折起</p>
+                     	</div>
+                     </a>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">5天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_11.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="new-label left">海外直发</span>
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">BURBERRY 英式魅力  优雅出行 </span>
+                     		<p class="right"><span>1.0</span>折起</p>
+                     	</div>
+                     </a>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">6天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_20.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">PHILIPP PLEIN  男女服装包袋配件 </span>
+                     		<p class="right"><span>1.7</span>折起</p>
+                     	</div>
+                     </a>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">6天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_12.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">PHILIPP PLEIN  男女服装包袋配件 </span>
+                     		<p class="right"><span>1.7</span>折起</p>
+                     	</div>
+                     </a>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">6天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_1.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">PHILIPP PLEIN  男女服装包袋配件 </span>
+                     		<p class="right"><span>1.7</span>折起</p>
+                     	</div>
+                     </a>
+			    </div>
+			    <div class="eventlist">
+			    	<h3>
+                     	<span class="spanLeft span"></span>
+                     	<span class="titleshop"><a href="#" class="human-active">男士活动</a></span>
+                     	<span class="spanRight span"></span>
+                     </h3>
+                     <div class="women-ban men-ban">
+                     	<div class="home-silo">
+                     		<h4>男士</h4>
+                     		<div class="home-box">
+                     			<div class="home-box-women">
+	                     			<a href="">服饰</a>
+	                     			<a href="">鞋履</a>
+	                     			<a href="">配饰</a>
+	                     			<a href="">手表</a>
+	                     			<a href="">包袋钱包</a>
+	                     			<a href="">内衣</a>
+                     			</div>
+                     			<a href="" class="other-more">查看更多   >></a>
+                     		</div>
+                     	</div>
+                     </div>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">7天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_21.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="new-label left">海外直发</span>
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">BALLY&nbsp;瑞士经典 魅力十足</span>
+                     		<p><span>2</span>折起</p>
+                     	</div>
+                     </a>
+                      <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">2天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_22.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">过年不打烊 WDLS 羊绒男装（跨场满减1500-300）</span>
+                     		<p class="right"><span>2.8</span>折起</p>
+                     	</div>
+                     </a>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">7天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_23.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="new-label left">海外直发</span>
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">BALLY&nbsp;瑞士经典 魅力十足</span>
+                     		<p><span>4.8</span>折起</p>
+                     	</div>
+                     </a>
+                      <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">2天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_24.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">过年不打烊 WDLS 羊绒男装（跨场满减1500-300）</span>
+                     		<p class="right"><span>5</span>折起</p>
+                     	</div>
+                     </a>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">3天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_25.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">过年不打烊 WDLS 羊绒男装（跨场满减1500-300）</span>
+                     		<p class="right"><span>1</span>折起</p>
+                     	</div>
+                     </a>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">5天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_26.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="new-label left">海外直发</span>
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">BURBERRY 英式魅力  优雅出行 </span>
+                     		<p class="right"><span>1.0</span>折起</p>
+                     	</div>
+                     </a>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">5天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_16.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="new-label left">海外直发</span>
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">BURBERRY 英式魅力  优雅出行 </span>
+                     		<p class="right"><span>1.0</span>折起</p>
+                     	</div>
+                     </a>
+			    </div>
+			    <div class="eventlist">
+			    	<h3>
+                     	<span class="spanLeft span"></span>
+                     	<span class="titleshop"><a href="#" class="human-active">美妆专区</a></span>
+                     	<span class="spanRight span"></span>
+                     </h3>
+                     <div class="women-ban cosmetics-ban ">
+                     	<div class="home-silo">
+                     		<h4>美妆</h4>
+                     		<div class="home-box">
+                     			<div class="home-box-women">
+	                     			<a href="">面膜</a>
+	                     			<a href="">彩妆</a>
+	                     			<a href="">护肤</a>
+	                     			<a href="">保健</a>
+	                     			<a href="">美容仪</a>
+	                     			<a href="">没发</a>
+                     			</div>
+                     			<a href="" class="other-more">查看更多   >></a>
+                     		</div>
+                     	</div>
+                     </div>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">7天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_4.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="new-label left">海外直发</span>
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">BALLY&nbsp;瑞士经典 魅力十足</span>
+                     		<p><span>2</span>折起</p>
+                     	</div>
+                     </a>
+                      <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">2天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_2.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">过年不打烊 WDLS 羊绒男装（跨场满减1500-300）</span>
+                     		<p class="right"><span>2.8</span>折起</p>
+                     	</div>
+                     </a>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">7天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_13.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="new-label left">海外直发</span>
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">BALLY&nbsp;瑞士经典 魅力十足</span>
+                     		<p><span>4.8</span>折起</p>
+                     	</div>
+                     </a>
+                      <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">2天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_8.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">过年不打烊 WDLS 羊绒男装（跨场满减1500-300）</span>
+                     		<p class="right"><span>5</span>折起</p>
+                     	</div>
+                     </a>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">3天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_1.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">过年不打烊 WDLS 羊绒男装（跨场满减1500-300）</span>
+                     		<p class="right"><span>1</span>折起</p>
+                     	</div>
+                     </a>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">5天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_20.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="new-label left">海外直发</span>
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">BURBERRY 英式魅力  优雅出行 </span>
+                     		<p class="right"><span>1.0</span>折起</p>
+                     	</div>
+                     </a>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">5天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_17.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="new-label left">海外直发</span>
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">BURBERRY 英式魅力  优雅出行 </span>
+                     		<p class="right"><span>1.0</span>折起</p>
+                     	</div>
+                     </a>
+			    </div>
+			    <div class="eventlist">
+			    	<h3>
+                     	<span class="spanLeft span"></span>
+                     	<span class="titleshop"><a href="#" class="human-active">海外活动</a></span>
+                     	<span class="spanRight span"></span>
+                     </h3>
+                     <div class="women-ban broad-ban ">
+                     	<div class="home-silo">
+                     		<h4>海外</h4>
+                     	</div>
+                     </div>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">7天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_8.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="new-label left">海外直发</span>
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">BALLY&nbsp;瑞士经典 魅力十足</span>
+                     		<p><span>2</span>折起</p>
+                     	</div>
+                     </a>
+                      <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">2天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_6.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="new-label left">海外直发</span>
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">过年不打烊 WDLS 羊绒男装（跨场满减1500-300）</span>
+                     		<p class="right"><span>2.8</span>折起</p>
+                     	</div>
+                     </a>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">7天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_15.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="new-label left">海外直发</span>
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">BALLY&nbsp;瑞士经典 魅力十足</span>
+                     		<p><span>4.8</span>折起</p>
+                     	</div>
+                     </a>
+                     <a href="html/page1.html" class="unit-shop">
+                     	<div class="layerShop"></div>
+                     	<div class="textShop">5天后活动结束</div>
+                     	<div class="picshop">
+                     		<img src="imgs/shouye/320x192_3.jpg" alt="" />
+                     	</div>
+                     	<div class="inforshop">
+                     		<span class="new-label left">海外直发</span>
+                     		<span class="left" style="display: block; width:180px; overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;">BURBERRY 英式魅力  优雅出行 </span>
+                     		<p class="right"><span>1.0</span>折起</p>
+                     	</div>
+                     </a>
+			    </div>
+			    <div class="eventlist activitesList">
+			    	<h3>
+                     	<span class="spanLeft span"></span>
+                     	<span class="titleshop">活动即将开始</span>
+                     	<span class="spanRight span"></span>
+                     </h3>
+                     <div class="activitesHeader">
+                     	<div class="activeTime">
+                     		<span class="activitiesWeek">明天</span>
+                     		<span class="activitiesWeek">周一</span>
+                     		<span class="activitiesWeek">周二</span>
+                     		<span class="activitiesWeek">周三</span>
+                     		<span class="activitiesWeek">周四</span>
+                     	</div>
+                     	<div class="theSlider"></div>
+                     </div>
+			         <div class="activitesContent">
+			         	<div class="newActivities">
+                            <div class="newTime">早上<span>0</span>点上新</div>
+			            </div>
+			            <div class="theActivities">
+                            <div class="theMask" style="display: none;"></div>
+                            <div class="theButton" style="display: none;">
+                                  <a class="a3" href="">预览</a>
+                                  <span class="left">｜</span>
+                                  <a class="a3">订阅</a>
+                            </div>
+                            <div class="theActivitiesImg">
+                                <img alt="时尚与专业结合" src="imgs/shouye/active_02.jpg">
+                            </div>
+                            <div class="theActivitiesExplain">
+                                <p>LORNA JANE 澳洲运动服&nbsp;时尚与专业结合</p>
+                                <p class="red"><span>6.6</span>折起</p>
+                            </div>
+                        </div>
+                        <div class="theActivities">
+                            <div class="theMask" style="display: none;"></div>
+                            <div class="theButton" style="display: none;">
+                                  <a class="a3" href="">预览</a>
+                                  <span class="left">｜</span>
+                                  <a class="a3">订阅</a>
+                            </div>
+                            <div class="theActivitiesImg">
+                                <img alt="时尚与专业结合" src="imgs/shouye/active_03.jpg">
+                            </div>
+                            <div class="theActivitiesExplain">
+                                <p>LORNA JANE 澳洲运动服</p>
+                                <p class="red"><span>4.1</span>折起</p>
+                            </div>
+                         </div>
+                        <div class="theActivities">
+                            <div class="theMask" style="display: none;"></div>
+                            <div class="theButton" style="display: none;">
+                                  <a class="a3" href="">预览</a>
+                                  <span class="left">｜</span>
+                                  <a class="a3">订阅</a>
+                            </div>
+                            <div class="theActivitiesImg">
+                                <img alt="时尚与专业结合" src="imgs/shouye/active_01.jpg">
+                            </div>
+                            <div class="theActivitiesExplain">
+                                <p>LORNA JANE 澳洲运动服&nbsp;时尚与专业结合</p>
+                                <p class="red"><span>6.8</span>折起</p>
+                            </div>
+                         </div>
+                        <div class="theActivities">
+                            <div class="theMask" style="display: none;"></div>
+                            <div class="theButton" style="display: none;">
+                                  <a class="a3" href="">预览</a>
+                                  <span class="left">｜</span>
+                                  <a class="a3">订阅</a>
+                            </div>
+                            <div class="theActivitiesImg">
+                                <img alt="时尚与专业结合" src="imgs/shouye/active_04.jpg">
+                            </div>
+                            <div class="theActivitiesExplain">
+                                <p>LORNA JANE 澳洲运动服&nbsp;时尚与专业结合</p>
+                                <p class="red"><span>4.3</span>折起</p>
+                            </div>
+                         </div>
+                         <div class="theActivities">
+                            <div class="theMask" style="display: none;"></div>
+                            <div class="theButton" style="display: none;">
+                                  <a class="a3" href="">预览</a>
+                                  <span class="left">｜</span>
+                                  <a class="a3">订阅</a>
+                            </div>
+                            <div class="theActivitiesImg">
+                                <img alt="时尚与专业结合" src="imgs/shouye/active_05.jpg">
+                            </div>
+                            <div class="theActivitiesExplain">
+                                <p>LORNA JANE 澳洲业结合</p>
+                                <p class="red"><span>1.8</span>折起</p>
+                            </div>
+                         </div>
+			         </div>
+			         <div class="activitesContent" style="display: none;">
+			         	<div class="newActivities">
+                            <div class="newTime">早上<span>9</span>点上新</div>
+			            </div>
+			            <div class="theActivities">
+                            <div class="theMask" style="display: none;"></div>
+                            <div class="theButton" style="display: none;">
+                                  <a class="a3" href="">预览</a>
+                                  <span class="left">｜</span>
+                                  <a class="a3">订阅</a>
+                            </div>
+                            <div class="theActivitiesImg">
+                                <img alt="时尚与专业结合" src="imgs/shouye/active_05.jpg">
+                            </div>
+                            <div class="theActivitiesExplain">
+                                <p>LORNA JANE 澳洲运动服&nbsp;时尚与专业结合</p>
+                            </div>
+                        </div>
+                        <div class="theActivities">
+                            <div class="theMask" style="display: none;"></div>
+                            <div class="theButton" style="display: none;">
+                                  <a class="a3" href="">预览</a>
+                                  <span class="left">｜</span>
+                                  <a class="a3">订阅</a>
+                            </div>
+                            <div class="theActivitiesImg">
+                                <img alt="时尚与专业结合" src="imgs/shouye/active_06.jpg">
+                            </div>
+                            <div class="theActivitiesExplain">
+                                <p>LORNA JANE 澳洲运动服</p>
+                                <p class="red"><span>3.4</span>折起</p>
+                            </div>
+                         </div>
+                        <div class="theActivities">
+                            <div class="theMask" style="display: none;"></div>
+                            <div class="theButton" style="display: none;">
+                                  <a class="a3" href="">预览</a>
+                                  <span class="left">｜</span>
+                                  <a class="a3">订阅</a>
+                            </div>
+                            <div class="theActivitiesImg">
+                                <img alt="时尚与专业结合" src="imgs/shouye/active_07.jpg">
+                            </div>
+                            <div class="theActivitiesExplain">
+                                <p>LORNA JANE 澳洲运动服&nbsp;时尚与专业结合</p>
+                            </div>
+                         </div>
+			         </div>
+			         <div class="activitesContent" style="display: none;">
+			         	<div class="newActivities">
+                            <div class="newTime">早上<span>10</span>点上新</div>
+			            </div>
+			            <div class="theActivities">
+                            <div class="theMask" style="display: none;"></div>
+                            <div class="theButton" style="display: none;">
+                                  <a class="a3" href="">预览</a>
+                                  <span class="left">｜</span>
+                                  <a class="a3">订阅</a>
+                            </div>
+                            <div class="theActivitiesImg">
+                                <img alt="时尚与专业结合" src="imgs/shouye/active_02.jpg">
+                            </div>
+                            <div class="theActivitiesExplain">
+                                <p>LORNA JANE 澳洲运动服&nbsp;时尚与专业结合</p>
+                            </div>
+                        </div>
+                        <div class="theActivities">
+                            <div class="theMask" style="display: none;"></div>
+                            <div class="theButton" style="display: none;">
+                                  <a class="a3" href="">预览</a>
+                                  <span class="left">｜</span>
+                                  <a class="a3">订阅</a>
+                            </div>
+                            <div class="theActivitiesImg">
+                                <img alt="时尚与专业结合" src="imgs/shouye/active_04.jpg">
+                            </div>
+                            <div class="theActivitiesExplain">
+                                <p>LORNA JANE 澳洲运动服</p>
+                                <p class="red"><span>3.4</span>折起</p>
+                            </div>
+                         </div>
+                        <div class="theActivities">
+                            <div class="theMask" style="display: none;"></div>
+                            <div class="theButton" style="display: none;">
+                                  <a class="a3" href="">预览</a>
+                                  <span class="left">｜</span>
+                                  <a class="a3">订阅</a>
+                            </div>
+                            <div class="theActivitiesImg">
+                                <img alt="时尚与专业结合" src="imgs/shouye/active_06.jpg">
+                            </div>
+                            <div class="theActivitiesExplain">
+                                <p>LORNA JANE 澳洲运动服&nbsp;时尚与专业结合</p>
+                            </div>
+                         </div>
+                         <div class="theActivities">
+                            <div class="theMask" style="display: none;"></div>
+                            <div class="theButton" style="display: none;">
+                                  <a class="a3" href="">预览</a>
+                                  <span class="left">｜</span>
+                                  <a class="a3">订阅</a>
+                            </div>
+                            <div class="theActivitiesImg">
+                                <img alt="时尚与专业结合" src="imgs/shouye/active_01.jpg">
+                            </div>
+                            <div class="theActivitiesExplain">
+                                <p>LORNA JANE 澳洲运动服&nbsp;时尚与专业结合</p>
+                            </div>
+                         </div>
+			         </div>
+			         <div class="activitesContent" style="display: none;">
+			         	<div class="newActivities">
+                            <div class="newTime">早上<span>9</span>点上新</div>
+			            </div>
+			            <div class="theActivities">
+                            <div class="theMask" style="display: none;"></div>
+                            <div class="theButton" style="display: none;">
+                                  <a class="a3" href="">预览</a>
+                                  <span class="left">｜</span>
+                                  <a class="a3">订阅</a>
+                            </div>
+                            <div class="theActivitiesImg">
+                                <img alt="时尚与专业结合" src="imgs/shouye/active_03.jpg">
+                            </div>
+                            <div class="theActivitiesExplain">
+                                <p>LORNA JANE 澳洲运动服&nbsp;时尚与专业结合</p>
+                            </div>
+                        </div>
+                        <div class="theActivities">
+                            <div class="theMask" style="display: none;"></div>
+                            <div class="theButton" style="display: none;">
+                                  <a class="a3" href="">预览</a>
+                                  <span class="left">｜</span>
+                                  <a class="a3">订阅</a>
+                            </div>
+                            <div class="theActivitiesImg">
+                                <img alt="时尚与专业结合" src="imgs/shouye/active_02.jpg">
+                            </div>
+                            <div class="theActivitiesExplain">
+                                <p>LORNA JANE 澳洲运动服</p>
+                                <p class="red"><span>3.4</span>折起</p>
+                            </div>
+                         </div>
+                        <div class="theActivities">
+                            <div class="theMask" style="display: none;"></div>
+                            <div class="theButton" style="display: none;">
+                                  <a class="a3" href="">预览</a>
+                                  <span class="left">｜</span>
+                                  <a class="a3">订阅</a>
+                            </div>
+                            <div class="theActivitiesImg">
+                                <img alt="时尚与专业结合" src="imgs/shouye/active_01.jpg">
+                            </div>
+                            <div class="theActivitiesExplain">
+                                <p>LORNA JANE 澳洲运动服&nbsp;时尚与专业结合</p>
+                            </div>
+                         </div>
+                         <div class="theActivities">
+                            <div class="theMask" style="display: none;"></div>
+                            <div class="theButton" style="display: none;">
+                                  <a class="a3" href="">预览</a>
+                                  <span class="left">｜</span>
+                                  <a class="a3">订阅</a>
+                            </div>
+                            <div class="theActivitiesImg">
+                                <img alt="时尚与专业结合" src="imgs/shouye/active_04.jpg">
+                            </div>
+                            <div class="theActivitiesExplain">
+                                <p>LORNA JANE 澳洲运动服&nbsp;时尚与专业结合</p>
+                            </div>
+                         </div>
+			         </div>
+			         <div class="activitesContent" style="display: none;">
+			         	<div class="newActivities">
+                            <div class="newTime">早上<span>9</span>点上新</div>
+			            </div>
+			            <div class="theActivities">
+                            <div class="theMask" style="display: none;"></div>
+                            <div class="theButton" style="display: none;">
+                                  <a class="a3" href="">预览</a>
+                                  <span class="left">｜</span>
+                                  <a class="a3">订阅</a>
+                            </div>
+                            <div class="theActivitiesImg">
+                                <img alt="时尚与专业结合" src="imgs/shouye/active_05.jpg">
+                            </div>
+                            <div class="theActivitiesExplain">
+                                <p>LORNA JANE 澳洲运动服&nbsp;时尚与专业结合</p>
+                            </div>
+                        </div>
+                        <div class="theActivities">
+                            <div class="theMask" style="display: none;"></div>
+                            <div class="theButton" style="display: none;">
+                                  <a class="a3" href="">预览</a>
+                                  <span class="left">｜</span>
+                                  <a class="a3">订阅</a>
+                            </div>
+                            <div class="theActivitiesImg">
+                                <img alt="时尚与专业结合" src="imgs/shouye/active_06.jpg">
+                            </div>
+                            <div class="theActivitiesExplain">
+                                <p>LORNA JANE 澳洲运动服</p>
+                                <p class="red"><span>3.4</span>折起</p>
+                            </div>
+                         </div>
+                        <div class="theActivities">
+                            <div class="theMask" style="display: none;"></div>
+                            <div class="theButton" style="display: none;">
+                                  <a class="a3" href="">预览</a>
+                                  <span class="left">｜</span>
+                                  <a class="a3">订阅</a>
+                            </div>
+                            <div class="theActivitiesImg">
+                                <img alt="时尚与专业结合" src="imgs/shouye/active_07.jpg">
+                            </div>
+                            <div class="theActivitiesExplain">
+                                <p>LORNA JANE 澳洲运动服&nbsp;时尚与专业结合</p>
+                            </div>
+                         </div>
+			         </div>
+			    </div>
+			</div>
+		</div>
+	    <div id="footer_container">
+	    	<div class="footer">
+	    		<div class="footer_advantage">
+		    	    <ul>
+	                    <li><a class="a1">100%正品保证</a></li>
+	                    <li><a class="a2" href="javascript:;">满688免运费</a></li>
+	                    <li><a class="a3" href="javascript:;">7天无条件退货</a></li>
+	                    <li><a class="a4" href="javascript:;">超值折扣</a></li>
+	                    <li><a class="a5" href="javascript:;">9点限时闪购</a></li>
+	                    <li class="footer_advantage_right">
+	                       <a class="a6" href="javascript:;">400－664－6698</a>
+	                    </li>
+	                </ul>
+	    		</div>
+	    		<p class="footer_link">
+	    			<a href="javascript:;">关于魅力惠</a>
+	    			<a href="javascript:;">加入我们</a>
+	    			<a href="javascript:;">联系我们</a>
+	    			<a href="javascript:;">使用帮助</a>
+	    			<a href="javascript:;">使用规则</a>
+	    			<a href="javascript:;">隐私声明</a>
+	    			<a href="javascript:;">网站地图</a>
+	    		</p>
+	    		<p class="footer_copyright">
+	    			<span>COPYRIGHT©2016  杭州魅俪信息技术有限公司版权所有</span>
+	    			浙ICP备16004860号-1
+	    		</p>
+	    		<p class="footer_license">
+	    			<a href="index.html"><img src="imgs/shouye/icon_badge.png" alt="" /></a>
+	    		</p>
+	    	</div>
+	    </div>
+	</body>
+	<script>
+		var vm = new Vue({
+			el : "#shoplist",
+			data : {
+				proList : [
+				      {name:"PESARO 女装","img":"imgs/shouye/320x192_13.jpg",
+				      activeEnd:"4天后活动结束",discount:"2"},
+				      {name:"SWAROVSKI 熠熠晶透女神饰品","img":"imgs/shouye/320x192_14.jpg",
+				      activeEnd:"6天后活动结束",discount:"3"},
+				      {name:"REBECCA MINKOFF 季末清仓(满减）","img":"imgs/shouye/320x192_15.jpg",
+				      activeEnd:"1天后活动结束",discount:"2.8"},
+				      {name:"意式经典 女士专场","img":"imgs/shouye/320x192_16.jpg",
+				      activeEnd:"2天后活动结束",discount:"0.5"},
+				      {name:"TOD'S & HOGAN 女士鞋履","img":"imgs/shouye/320x192_17.jpg",
+				      activeEnd:"3天后活动结束",discount:"1.9"},
+				      {name:"意式经典 女士专场","img":"imgs/shouye/320x192_18.jpg",
+				      activeEnd:"购满1件，享8折；满2件，享7折优惠",discount:"3"},
+				      {name:"JILL STUART 日系名媛风","img":"imgs/shouye/320x192_19.jpg",
+				      activeEnd:"4天后活动结束",discount:"1"},
+				      {name:"MONO SPACE 造物季演绎自我风格女装（满折）","img":"imgs/shouye/320x192_20.jpg",
+				      activeEnd:"6天后活动结束",discount:"1.2"},
+				      {name:"PINKO&LES PETITS JOUEURS 等包袋 ","img":"imgs/shouye/320x192_5.jpg",
+				      activeEnd:"7天后活动结束",discount:"5.8"},
+				]
+			}
+		})
+	</script>
+</html>
