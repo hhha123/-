@@ -40,3 +40,26 @@ function fadeBan(){
 	}
 }
 fadeBan();
+
+//选项卡功能
+function active(){
+	$(".activeTime .activitiesWeek").click(function(){
+		var index = $(this).index();
+		$(".theSlider").css("left",index*90);
+		$(".activitesContent").eq(index).css("display","block")
+		                      .siblings(".activitesContent").css("display","none");
+    })
+}
+active();
+
+//遮罩层
+function layer(){
+	$(".theActivities").mouseenter(function(){
+        $(this).find(".theMask").css("display","block");
+        $(this).find(".theButton").css("display","block");
+	}).mouseleave(function(){
+        $(this).find(".theMask").css("display","none");
+        $(this).find(".theButton").css("display","none");
+	})
+}
+layer();
