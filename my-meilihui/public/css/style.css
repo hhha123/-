@@ -17,7 +17,7 @@ fieldset{
 /*header---------------------------------------------------------------------------------------------------*/
 #header_wrap{
 	width: 100%;
-	height: 161px;
+	height: 120px;
 	background: url(../imgs/shouye/head_bj.jpg) repeat-x;
 }
 #header{
@@ -91,7 +91,14 @@ fieldset{
     height: 90px;
     text-indent: -9999px;
 }
-#header .nav{
+/*.nav_wrap--------------------------------------------------------*/
+.nav_wrap{
+    width: 100%;
+    background: #000;
+}
+.nav_wrap .nav{
+    width: 1000px;
+    margin: auto;
 	height: 42px;
 	line-height: 42px;
 	font-size: 14px;
@@ -143,11 +150,17 @@ fieldset{
 /*banner-------------------------------------------------------*/
 #banpic{
 	width: 100%;
+    height: 524px;
+    position: relative;
+    overflow: hidden;
 }
-#banpic .ban{
-	width: 100%;
+#banpic .ban img{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -900px;
+	width: 1800px;
 	height: 524px;
-	background: url(../imgs/shouye/banner.jpg) no-repeat center center;
 	cursor: pointer;
 }
 /*content------------------------------------------------------------*/
@@ -562,5 +575,61 @@ fieldset{
 	margin-right: 30px;
 }
 .footer_license{
-	
+}
+/*右侧固定二维码----------------------------------------*/
+#fixedTop{
+    width: 98px;
+    height: 300px;
+    position: fixed;
+    right: 0;
+    bottom: 50px;
+    overflow: hidden;
+    z-index: 9997;
+    text-align: center;
+    background: transparent; 
+}
+#fixedTop .topQ{
+    overflow: hidden;
+    background-color: #000;
+    font-size: 14px;
+    color: #fff;
+    padding: 5px 0;
+}
+#fixedTop .topQ span{
+    color: red;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+#fixedTop .erweima{
+    border: 1px solid #ccc;
+    overflow: hidden;
+    margin: 0;
+    background-color: #fff;
+    padding: 5px 0;
+}
+.erweima span{
+    line-height: 22px;
+    display: inline-block;
+}
+.erweima img{
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.clickOn{
+    height: 24px;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: 0;
+}
+.clickOn a{
+    display: block;
+    width: 100%;
+    height: 24px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url(../imgs/shouye/base_z.png) no-repeat -564px -428px;
 }
