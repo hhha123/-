@@ -1,4 +1,4 @@
-//以及吸顶效果
+//吸顶效果
 $(window).scroll(function(){
 	var sTop = $(document).scrollTop();
 	if(sTop>160){
